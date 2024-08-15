@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import './../styles/App.css'
-
 const CounterClick = ()=>{
   const [Count, setCount] = useState(0);
         const incrementClick = () =>{
