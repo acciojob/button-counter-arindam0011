@@ -1,6 +1,6 @@
 import React from "react";
 import './../styles/App.css';
-import CounterClick form './Counter'
+import CounterClick from './Counter';
 const App = () => {
   return (
     <div>
