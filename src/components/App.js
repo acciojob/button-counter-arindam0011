@@ -1,11 +1,11 @@
 
 import React from "react";
 import './../styles/App.css';
-import 
+import CounterClick form './Counter'
 const App = () => {
   return (
     <div>
-        {/* Do not remove the main div */}
+        <CounterClick />
     </div>
   )
 }
