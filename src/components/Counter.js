@@ -1,6 +1,5 @@
 import Ract, {useState} from 'react';
-
-import '../styles/App.css'
+import './../styles/App.css'
 
 const CounterClick = ()=>{
   const [Count, setCount] = useState(0);
