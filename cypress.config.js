@@ -1,10 +1,12 @@
-import { defineConfig } from "cypress";
+const { defineConfig } = require('cypress');
 
-export const e2e = {
-  supportFile: false, // Disable the support file requirement
-  baseUrl: 'http://localhost:3000',
-  setupNodeEvents(on, config) {
-    // setup node event listeners if needed
+module.exports = defineConfig({
+  e2e: {
+    setupNodeEvents(on, config) {
+      // implement node event listeners here
+    },
+    baseUrl: 'http://localhost:3000',
+    supportFile: 'cypress/support/e2e.js', // Adjust this if you don't have an e2e.js file
+    specPattern: '**/*.spec.js',
   },
-  specPattern: '**/*.spec.js',
-};
+});
