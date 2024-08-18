@@ -1,11 +1,10 @@
-const { defineConfig } = require("cypress");
+import { defineConfig } from "cypress";
 
-module.exports = {
-  e2e: {
-    baseUrl: 'http://localhost:3000', // Change this to your app's URL
-    setupNodeEvents(on, config) {
-      // setup node event listeners if needed
-    },
-    specPattern: '**/*.spec.js', // Specify your test file pattern
+export const e2e = {
+  supportFile: false, // Disable the support file requirement
+  baseUrl: 'http://localhost:3000',
+  setupNodeEvents(on, config) {
+    // setup node event listeners if needed
   },
+  specPattern: '**/*.spec.js',
 };
